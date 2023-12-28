@@ -28,6 +28,11 @@ public class TablaPosiciones {
      * Muestra la tabla de posiciones en la consola.
      */
     public void mostrarTablaPosiciones() {
+        if (cabeza == null) {
+            System.out.println("La tabla de posiciones está vacía.");
+            return;
+        }
+    
         Equipo actual = cabeza;
         while (actual != null) {
             System.out.println(actual.getNombre() + ": " + actual.getPuntaje() + " puntos");
@@ -46,16 +51,18 @@ public class TablaPosiciones {
         if (inicio == null || inicio.getSiguiente() == null) {
             return inicio;
         }
-
+    
         Equipo pivot = inicio;
         Equipo menorCabecera = null;
         Equipo menor = null;
         Equipo mayorCabecera = null;
         Equipo mayor = null;
-
+    
         Equipo actual = inicio.getSiguiente();
         while (actual != null) {
             Equipo siguiente = actual.getSiguiente();
+            actual.setSiguiente(null);  
+    
             if (actual.getPuntaje() > pivot.getPuntaje()) {
                 if (mayorCabecera == null) {
                     mayorCabecera = actual;
@@ -76,23 +83,8 @@ public class TablaPosiciones {
             actual = siguiente;
         }
 
-        if (menor != null) {
-            menor.setSiguiente(null);
-            menorCabecera = quicksort(menorCabecera);
-            menor = getUltimoEquipo(menorCabecera);
-            menor.setSiguiente(pivot);
-            inicio = menorCabecera;
-        } else {
-            inicio = pivot;
-        }
-
-        if (mayor != null) {
-            mayor.setSiguiente(null);
-            mayorCabecera = quicksort(mayorCabecera);
-            pivot.setSiguiente(mayorCabecera);
-        }
-
         return inicio;
+        
     }
 
     private Equipo getUltimoEquipo(Equipo equipo) {
@@ -115,6 +107,7 @@ public class TablaPosiciones {
     }
 
     private Equipo seleccionSort(Equipo inicio) {
+        
         if (inicio == null || inicio.getSiguiente() == null) {
             return inicio;
         }
@@ -127,7 +120,7 @@ public class TablaPosiciones {
             actual = eliminarEquipo(actual, menor); // Elimina el elemento menor de la lista no ordenada
             cabezaOrdenada = insertarAlPrincipio(cabezaOrdenada, menor); // Inserta el elemento menor al principio de la lista ordenada
         }
-
+       
         return cabezaOrdenada;
     }
 
@@ -146,6 +139,7 @@ public class TablaPosiciones {
     }
 
     private Equipo eliminarEquipo(Equipo inicio, Equipo equipoEliminar) {
+        
         if (inicio == equipoEliminar) {
             return inicio.getSiguiente();
         }
@@ -158,7 +152,7 @@ public class TablaPosiciones {
         if (actual != null) {
             actual.setSiguiente(equipoEliminar.getSiguiente());
         }
-
+        
         return inicio;
     }
 
