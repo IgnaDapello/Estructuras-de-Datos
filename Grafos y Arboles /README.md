@@ -1,10 +1,10 @@
-<span style="font-size: 26px;">Proyecto Árboles y Grafos en Java</span>
+@@ Proyecto Árboles y Grafos en Java @@
 
 ---
 
-<span style="color: orange;">Situación Problemática</span>
+!Situación Problemática
 
-Imagina que estás planificando un viaje por una red de ciudades y quieres encontrar la ruta más eficiente entre dos puntos. Cada ciudad se representa como un nodo en un grafo, y las conexiones entre ciudades se establecen mediante aristas con pesos que indican la distancia entre ellas.
+!!Imagina que estás planificando un viaje por una red de ciudades y quieres encontrar la ruta más eficiente entre dos puntos. Cada ciudad se representa como un nodo en un grafo, y las conexiones entre ciudades se establecen mediante aristas con pesos que indican la distancia entre ellas.
 
 Para resolver este problema, creé un proyecto en Java que aborda la creación y manipulación de árboles y grafos. El objetivo principal es encontrar el camino más corto entre dos ciudades, considerando la red de conexiones y sus distancias.
 
