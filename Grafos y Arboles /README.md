@@ -1,9 +1,9 @@
-<h2 style="color:blue;">Proyecto Árboles y Grafos en Java</h2>
+<h2 style="color🧡;">Proyecto Árboles y Grafos en Java</h2>
 
 
 ---
 
-## Situación Problemática
+### Situación Problemática
 
 Imagina que estás planificando un viaje por una red de ciudades y quieres encontrar la ruta más eficiente entre dos puntos. Cada ciudad se representa como un nodo en un grafo, y las conexiones entre ciudades se establecen mediante aristas con pesos que indican la distancia entre ellas.
 
