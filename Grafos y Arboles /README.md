@@ -1,16 +1,16 @@
-<h2 style="color🧡;">Proyecto Árboles y Grafos en Java</h2>
+# <h2 style="color: orange;">Proyecto Árboles y Grafos en Java</h2>
 
 
 ---
 
-### Situación Problemática
+# Situación Problemática
 
 Imagina que estás planificando un viaje por una red de ciudades y quieres encontrar la ruta más eficiente entre dos puntos. Cada ciudad se representa como un nodo en un grafo, y las conexiones entre ciudades se establecen mediante aristas con pesos que indican la distancia entre ellas.
 
 Para resolver este problema, creé un proyecto en Java que aborda la creación y manipulación de árboles y grafos. El objetivo principal es encontrar el camino más corto entre dos ciudades, considerando la red de conexiones y sus distancias.
 
 ---
-# Conceptos de Java y POO Utilizados
+## Conceptos de Java y POO Utilizados
 Encapsulamiento: Uso de encapsulamiento para proteger y gestionar el acceso a los datos de las clases.
 Herencia: Aplicación de herencia en la relación entre la clase ArbolNodo y Arbol.
 Polimorfismo: La clase ArbolNodo es polimórfica ya que puede tener múltiples hijos.
