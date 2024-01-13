@@ -6,6 +6,10 @@ En esta carpeta, encontrarás una colección de actividades y proyectos relacion
 
 - **Proyecto 1:** Equipos de Fútbol. 
 - **Proyecto 2:** Travel Fast!
+- **Proyecto 3:** HashTables
 
+Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarme! 
 
-Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarme! Code your mmind!
+---
+
+Code your mmind!
